@@ -1,3 +1,112 @@
+# MarkFrame (印影)
+
+A professional photo watermarking application that supports multiple beautiful templates and custom watermark effects.
+
+## Features
+
+### 🎨 Diverse Templates
+- **Template 1**: Classic black border, simple and elegant
+- **Template 2**: White border design, fresh and bright
+- **Template 3**: Film-style border, retro and nostalgic
+- **Template 4**: EXIF information display, professional photography
+- **Template 5**: Custom text watermark, personal expression
+
+### 📸 Smart Watermark System
+- Automatically recognize photo EXIF information
+- Support camera brand logo display
+- Customizable text content and styles
+- Smart layout adaptation for different sizes
+
+### 🎯 User Experience
+- Modern interface design
+- Smooth animation effects
+- Real-time preview functionality
+- One-click save to photo album
+
+## Technical Architecture
+
+### Core Technology Stack
+- **SwiftUI**: Modern UI framework
+- **Combine**: Reactive programming
+- **Core Graphics**: Image processing
+- **Photos Framework**: Photo album access
+
+### Project Structure
+```
+FrameU/
+├── Models/
+│   ├── TemplateModel.swift          # Template data model
+│   └── WatermarkModel.swift         # Watermark processing core
+├── Views/
+│   ├── HomeView.swift               # Main interface
+│   ├── PreviewView.swift            # Preview interface
+│   ├── AboutView.swift              # About page
+│   ├── ImagePicker.swift            # Image picker
+│   ├── LogoSelectionView.swift      # Logo selection interface
+│   └── Template5SettingsView.swift  # Template 5 settings interface
+├── Extensions/
+│   └── String+Localization.swift   # Localization extensions
+├── Assets.xcassets/                 # Image resources
+├── Localizable.strings              # Multi-language support
+├── ContentView.swift                # Main interface
+├── MarkFrameApp.swift               # App entry point
+└── Info.plist                       # App configuration
+```
+
+## Development Environment
+
+### System Requirements
+- iOS 18.2+
+- Xcode 16.2+
+- Swift 5.0+
+
+### Build Steps
+1. Clone the project locally
+```bash
+git clone [project_url]
+cd FrameU
+```
+
+2. Open the project with Xcode
+```bash
+open FrameU.xcodeproj
+```
+
+3. Select target device and run
+- Choose simulator or real device
+- Press `Cmd + R` to run the project
+
+## Core Feature Implementation
+
+### Watermark Generation Algorithm
+- High-performance image processing based on Core Graphics
+- Support for multiple blend modes and transparency control
+- Adaptive text size and position layout
+
+### Template System
+- Extensible template architecture design
+- Support for dynamic parameter configuration
+- Automatic preview image generation
+
+### Performance Optimization
+- Asynchronous image processing execution
+- Memory usage optimization
+- Debounce mechanism to avoid frequent redraws
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact Us
+
+Discover more tools and inspiration:
+- **WeChat**: melixc
+- **Xiaohongshu**: @星城影像狮
+
+---
+
+**MarkFrame** - Every photo has a story
+
 # 印影 (MarkFrame)
 
 一款专业的照片水印添加应用，支持多种精美模板和自定义水印效果。
